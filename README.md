@@ -48,14 +48,8 @@ Cancer treatment faces significant challenges due to tumor heterogeneity and the
    - Gene Ontology and KEGG pathway enrichment
    - Identification of co-expressed therapeutic targets
 
-## Key Features
 
-- **Comprehensive single-cell analysis** using Scanpy workflows with quality control and preprocessing
-- **Trajectory and pseudotime analysis** to understand cellular state dynamics and transitions
-- **Multi-cancer cell line comparison** for broader therapeutic insights
-- **Reproducible pipeline** with documented code and dependencies
-
-## `Project Structure
+## Project Structure
 
 ```
 .
@@ -73,35 +67,7 @@ Cancer treatment faces significant challenges due to tumor heterogeneity and the
     └── processed/                          # Processed analysis-ready data
 ```
 
-## Setup Instructions
 
-1. **Clone the repository**
-
-   ```bash
-   git clone <your-repo-url>
-   cd single-cell-RNA_FDA-drugs
-   ```
-2. **Create virtual environment**
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-3. **Install dependencies**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. **Download data**
-
-   ```bash
-   chmod +x scripts/data_download.sh
-   ./scripts/data_download.sh
-   ```
-5. **Run analysis**
-
-   - Open `notebooks/scRNA_drug_target_analysis.ipynb` in Jupyter
-   - Execute cells sequentially
 
 ## Dependencies
 
@@ -152,14 +118,6 @@ I developed a scoring system that integrates target expression, response markers
 6. Differential expression analysis
 7. Pathway enrichment analysis
 
-### References
-
-### Key Publications
-
-- Kinker, G.S., et al. (2020). Pan-cancer single-cell RNA-seq identifies recurring programs of cellular heterogeneity. Nature Genetics.
-- Haque, A., et al. (2017). A practical guide to single-cell RNA-sequencing for biomedical research. Genome Medicine.
-- Wolf, F.A., et al. (2018). SCANPY: large-scale single-cell gene expression data analysis. Genome Biology.
-
 ### Data Resources
 
 - Cancer Cell Line Encyclopedia (CCLE), Broad Institute
@@ -193,6 +151,14 @@ I developed a scoring system that integrates target expression, response markers
 - Leiden clustering for cell population identification
 - Custom visualization functions for synergy, windows, and comparisons
 
-## License
 
-This project is for educational and research purposes.
+
+
+### References
+
+### Key Publications
+
+- Kinker, G.S., et al. (2020). Pan-cancer single-cell RNA-seq identifies recurring programs of cellular heterogeneity. Nature Genetics.
+- Haque, A., et al. (2017). A practical guide to single-cell RNA-sequencing for biomedical research. Genome Medicine.
+- Wolf, F.A., et al. (2018). SCANPY: large-scale single-cell gene expression data analysis. Genome Biology.
+
