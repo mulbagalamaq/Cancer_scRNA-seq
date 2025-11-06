@@ -55,46 +55,7 @@ Cancer treatment faces significant challenges due to tumor heterogeneity and the
 - **Multi-cancer cell line comparison** for broader therapeutic insights
 - **Reproducible pipeline** with documented code and dependencies
 
-## Unique Contributions
-
-This analysis extends beyond standard single-cell RNA-seq workflows with several novel analytical approaches:
-
-### 1. Drug Synergy Scoring
-
-- Calculates co-expression-based synergy scores for combination therapy
-- Identifies cell populations that express both therapeutic targets simultaneously
-- Uses geometric mean to emphasize dual-target expression patterns
-- Enables identification of optimal candidates for combination treatment strategies
-
-### 2. Therapeutic Window Analysis
-
-- Defines optimal expression ranges for drug targeting
-- Distinguishes between responsive and potentially resistant populations
-- Identifies expression ranges where drugs are most likely to be effective
-- Helps prioritize treatment decisions based on target expression levels
-
-### 3. Cross-Cancer Type Comparison
-
-- Systematic comparison of target expression across diverse cancer cell lines
-- Identifies potential new indications beyond current FDA approvals
-- Statistical validation of expression differences between cancer types
-- Enables evidence-based expansion of therapeutic applications
-
-### 4. Regulatory Network Analysis
-
-- Identifies transcription factors that control drug target expression
-- Reveals upstream regulatory mechanisms
-- Highlights potential resistance mechanisms through correlation analysis
-- Suggests combination therapy targets by identifying co-regulatory factors
-
-### 5. Response Prediction Scoring
-
-- Integrates multiple factors (target expression, response markers, resistance indicators)
-- Calculates treatment priority scores for clinical decision support
-- Combines expression data with known response-associated markers
-- Provides quantitative framework for treatment prioritization
-
-## Project Structure
+## `Project Structure
 
 ```
 .
@@ -231,7 +192,6 @@ I developed a scoring system that integrates target expression, response markers
 - UMAP for non-linear dimensionality reduction
 - Leiden clustering for cell population identification
 - Custom visualization functions for synergy, windows, and comparisons
-
 
 ## License
 
