@@ -106,53 +106,6 @@ I found several transcription factors that correlated with target gene expressio
 
 I developed a scoring system that integrates target expression, response markers, and potential resistance indicators. This helped prioritize which cell lines or subpopulations might be most responsive to treatment. However, I should note that these scores are predictive and would need validation with actual drug response data.
 
-## Analytical Approach
-
-### Standard Workflow
-
-1. Quality control and filtering (genes, cells, mitochondrial/ribosomal content)
-2. Normalization and log transformation
-3. Highly variable gene identification
-4. Dimensionality reduction (PCA, UMAP)
-5. Clustering (Leiden algorithm)
-6. Differential expression analysis
-7. Pathway enrichment analysis
-
-### Data Resources
-
-- Cancer Cell Line Encyclopedia (CCLE), Broad Institute
-- Gene Expression Omnibus (GEO), NCBI
-- Sequence Read Archive (SRA), NCBI
-- 10x Genomics Public Datasets
-
-### Drug Information
-
-- Trastuzumab: FDA-approved HER2-targeted therapy for breast and gastric cancers
-- Bevacizumab: FDA-approved VEGF-targeted therapy for multiple cancer types
-
-## Computational Methods
-
-### Software Versions
-
-- Python 3.8+
-- Scanpy 1.9+
-- Key dependencies: pandas, numpy, scipy, matplotlib, seaborn, scikit-learn
-
-### Statistical Methods
-
-- Non-parametric correlation (Spearman) for regulatory network analysis
-- Wilcoxon rank-sum test for differential expression
-- Z-score normalization for cross-cancer comparisons
-- Percentile-based thresholding for therapeutic windows
-
-### Visualization
-
-- UMAP for non-linear dimensionality reduction
-- Leiden clustering for cell population identification
-- Custom visualization functions for synergy, windows, and comparisons
-
-
-
 
 ### References
 
